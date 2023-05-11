@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        background-color: rgb(255, 244, 232);
+        border: none;
+        padding: 10px 20px;
+        box-shadow: 4px 5px 14px rgb(233, 233, 233);
+        color: rgb(56, 28, 2);
+      }
+      button:hover {
+        background-color: rgb(230, 179, 125);
+        color: white;
+        box-shadow: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button
+        onclick="change_image.src='https://i.pinimg.com/564x/ef/cd/42/efcd420c28250dacc1cda43703bb8537.jpg'"
+      >
+        Предыдущая
+      </button>
+      <img
+        id="change_image"
+        src="https://i.pinimg.com/564x/47/7f/25/477f251932ccc73bc018721a036e5292.jpg"
+      />
+      <button
+        onclick="change_image.src='https://i.pinimg.com/564x/47/7f/25/477f251932ccc73bc018721a036e5292.jpg'"
+      >
+        Следующая
+      </button>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>
